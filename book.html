@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Session</title>
+<link rel="stylesheet" href="book.css">
+
+    <script src="https://kit.fontawesome.com/d3b6cb43f3.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="logo.jpg" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="logo.jpg" />
+  <link rel="shortcut icon" href="logo.jpg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="logo.jpg" />
+  <link rel="manifest" href="logo.jpg" />
+
+</head>
+<body>
+     <!--navbar-->
+     <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="logo.jpg" alt="Astrology Logo"></a>
+          <a href="index.html"><h1>Super AstroVastu</h1></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">Faqs</a></li>
+          <li><a href="book.html">Book Appointment</a></li>
+  
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!--book section-->
+    <div class="container">
+      <!-- Info Cards -->
+      <div class="info-cards">
+          <div class="card">
+              <div class="icon">
+                  <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Office Address</h3>
+              <p>House NO.53 Behind Ghate Hotel Clinix, park Square Nagpur 440032 INDIA</p>
+          </div>
+
+          <div class="card">
+              <div class="icon">
+                  <i class="fas fa-envelope"></i>
+              </div>
+              <h3>E-mail Us</h3>
+              <p>Abhisheksoni53@gmail.com</p>
+          </div>
+
+          <div class="card">
+              <div class="icon">
+                  <i class="fas fa-phone"></i>
+              </div>
+              <h3>Call Us</h3>
+              <p>+91 9372524219<br>+91 8237107999</p>
+          </div>
+      </div>
+
+      <!-- Consultation Section -->
+      <div class="consultation-section">
+          <div class="profile-section">
+              <div class="profile-image">
+                  <img src="prof.jpg" alt="Astrologer">
+              </div>
+              <h2>Consult Expert Astrologer Abhishek Soni</h2>
+              <p>Whether you're in the bustling streets of Mumbai or the serene countryside of New York, Abhishek Soni's insights are just a click away.</p>
+              
+          </div>
+
+          <div class="form-section">
+              <h2>Consult Abhishek Soni</h2>
+              <form id="consultForm"  method="post">
+                  <div class="form-group">
+                      <input type="text" placeholder="Your Name" required >
+                  </div>
+                  <div class="form-group">
+                      <input type="tel" placeholder="Your Mobile No" required >
+                  </div>
+                  <div class="form-group">
+                      <input type="text" placeholder="Subject" required >
+                  </div>
+                  <div class="form-group">
+                      <textarea placeholder="Your Message (optional)" ></textarea>
+                  </div>
+                  <button type="submit" class="submit-btn">Consult Now</button>
+              </form>
+          </div>
+      </div>
+  </div>
+
+<!--footer section-->
+<footer class="footer">
+  <div class="footer-content">
+      <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="about.html" class="footer-link">About Us</a>
+          <a href="book.html" class="footer-link">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://facebook.com" class="social-icon" id="facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com" class="social-icon" id="instagram" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://twitter.com" class="social-icon" id="twitter" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://youtube.com" class="social-icon" id="youtube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="footer-copy">
+          <p>&copy; 2025 SuperAstroVastu. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+</body>
+</html>

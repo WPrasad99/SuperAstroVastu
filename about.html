@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/d3b6cb43f3.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/png" href="logo.jpg" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="logo.jpg" />
+  <link rel="shortcut icon" href="image/logo.jpg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="logo.jpg" />
+  <link rel="manifest" href="logo.jpg" />
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="logo.jpg" alt="Astrology Logo"></a>
+          <a href="index.html"><h1>Super AstroVastu</h1></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">Faqs</a></li>
+          <li><a href="book.html">Book Appointment</a></li>
+  
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="about-us">
+      <div class="about-header">
+          <h2>Why SuperAstroVastu ?</h2>
+          <div class="separator"></div>
+      </div>
+      <div class="about-content">
+          <div class="about-text">
+              <h3>About Superna Naik</h3>
+              <p>
+                  Astrologer Suparna Naik: Guiding Stars to Destiny. In a world full of mysteries and uncertainties, the pursuit of understanding the cosmic forces that shape our lives has been a timeless endeavor. In the vast tapestry of astrology, there emerges a luminary figure, a beacon of knowledge and wisdom – Astrologer Abhishek Soni. If you seek profound insights into your life’s journey, yearn to decipher the enigmatic future, or simply wish to navigate the celestial path, Abhishek Soni is your trusted guide, a name synonymous with excellence in the realm of astrology.
+              </p>
+              <p>
+                  What sets Abhishek Soni apart is not just his deep knowledge but also his unwavering commitment to guiding those who seek his counsel. His online services transcend geographical boundaries, allowing individuals from every corner of the world to tap into his expertise. Whether you’re in the bustling streets of Mumbai or the serene countryside of New York, Abhishek Soni’s insights are just a click away.
+              </p>
+              <a href="tel:+918237107999" class="contact-button">
+                  <span class="phone-icon">&#128222;</span> +91 8237107999
+              </a>
+          </div>
+          <div class="about-image">
+              <img src="prof.jpg" alt="astro vastu">
+          </div>
+      </div>
+  </section>
+  
+  <!-- Video Section -->
+  <section class="interview">
+      <h2>Our Astrologer's Interview</h2>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zsZhLrlJ9PU?si=9baZ2Xc6EbWRKGj7" frameborder="0" allowfullscreen></iframe>
+      </div>
+  </section>
+
+  <script>
+      // Navbar toggle for smaller screens
+      function toggleMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          navLinks.classList.toggle('active');
+      }
+
+      // Contact button alert
+      function contactUs() {
+          alert("Thank you for reaching out! Our team will contact you shortly.");
+      }
+  </script>
+
+<!--footer section-->
+<footer class="footer">
+  <div class="footer-content">
+      <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="about.html" class="footer-link">About Us</a>
+          <a href="book.html" class="footer-link">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://facebook.com" class="social-icon" id="facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com" class="social-icon" id="instagram" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://twitter.com" class="social-icon" id="twitter" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://youtube.com" class="social-icon" id="youtube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="footer-copy">
+          <p>&copy; 2025 SuperAstroVastu. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+</body>
+</html>

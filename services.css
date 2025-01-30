@@ -1,0 +1,340 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("bg (1).png") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Logo Animation */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo a {
+    text-decoration: none ;
+  }
+  
+  .logo img {
+    height: 50px;
+    animation: fadeIn 1.5s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    animation: fadeInText 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #8a2be2; /* Bluish-violet color */
+  }
+  
+  /* Hover Animation for Links */
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: #8a2be2; /* Bluish-violet color */
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+      background: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      border-radius: 10px;
+      padding: 10px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+
+/*services*/
+  .services {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #8a2be2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #e0d3ff;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .service-card {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      );
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .service-card i {
+    font-size: 3rem;
+    color: #8a2be2;
+    margin-bottom: 15px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:#8a2be2;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #e0d3ff;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #6a1bb1;
+  transform: scale(1.05);
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffd700;
+    color: #4c0486;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    font-size: 1.2rem;
+  }
+  
+  .scroll-to-top:hover {
+    background: #e0c500;
+  }
+
+
+
+  /*footer section*/
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    );
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-content {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .footer-links {
+    margin-bottom: 20px;
+  }
+  
+  .footer-link {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-link:hover {
+    color: #8400ff;
+  }
+  
+  .footer-socials {
+    margin-bottom: 20px;
+  }
+  
+  .social-icon {
+    font-size: 30px;
+    margin: 0 15px;
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    color: #8400ff;
+  }
+  
+  .footer-copy {
+    font-size: 14px;
+  }
+  
+  .footer-copy p {
+    color: #95a5a6;
+  }
+  
+  @keyframes slideInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  .footer {
+    animation: slideInUp 1s ease-out;
+  }

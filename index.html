@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astrology Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d3b6cb43f3.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/png" href="logo.jpg" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="logo.jpg" />
+<link rel="shortcut icon" href="logo.jpg" />
+<link rel="apple-touch-icon" sizes="180x180" href="logo.jpg" />
+<link rel="manifest" href="logo.jpg" />
+
+</head>
+<body>
+  <header>
+
+    <!--navbar-->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="logo.jpg" alt="Astrology Logo"></a>
+        <a href="index.html"><h1>SuperAstroVastu</h1></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+    
+        <li><a href="services.html">Services</a></li>
+        <li><a href="faq.html">Faqs</a></li>
+        <li><a href="book.html">Book Appointment</a></li>
+
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!--hero section-->
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Discover Your Destiny</h1>
+        <p>
+          Welcome to the world of astrology, where the stars reveal the mysteries of life. 
+          Connect with expert astrologers and explore personalized guidance for your life's journey.
+        </p>
+        <button class="cta-button">Book Your Session</button>
+      </div>
+      <div class="hero-image">
+        <div class="image-frame">
+          <img src="prof.jpg" alt="Astrologer">
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!--section features-->
+  <section class="features">
+    <div class="features-heading">
+      <h2>Explore Our Astrology Services</h2>
+      <p>Discover the wisdom of the stars through personalized astrology services tailored to your needs.</p>
+    </div>
+  
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">
+          <img src="1.jpg" alt="Zodiac Readings">
+        </div>
+        <h3>Zodiac Readings</h3>
+        <p>Get insights into your personality, relationships, and future through your zodiac sign.</p>
+        <a href="book.html" class="know-more-btn">Consult Now</a>
+      </div>
+  
+      <div class="feature-card">
+        <div class="icon">
+          <img src="2.jpg" alt="Daily Horoscope">
+        </div>
+        <h3>Daily Horoscope</h3>
+        <p>Receive personalized daily horoscope predictions to guide your day with clarity.</p>
+        <a href="book.html" class="know-more-btn">Consult Now</a>
+      </div>
+  
+      <div class="feature-card">
+        <div class="icon">
+          <img src="3.jpg" alt="Compatibility Reports">
+        </div>
+        <h3>Compatibility Reports</h3>
+        <p>Analyze your compatibility with loved ones for stronger, meaningful connections.</p>
+        <a href="book.html" class="know-more-btn">Consult Now</a>
+      </div>
+  
+      <div class="feature-card">
+        <div class="icon">
+          <img src="4.jpg" alt="Birth Chart Analysis">
+        </div>
+        <h3>Birth Chart Analysis</h3>
+        <p>Unlock the secrets of your birth chart to understand your strengths and challenges.</p>
+        <a href="book.html" class="know-more-btn">Consult Now</a>
+      </div>
+    </div>
+  </section>
+  
+<!--about us section-->
+  <section class="about-us" id="about-us">
+    <div class="about-card">
+      <div class="about-image">
+        <div class="image-frame">
+        <img src="prof.jpg" alt="Astrologer">
+      </div>
+      </div>
+      <div class="about-content">
+        <h2>About Us</h2>
+        <div class="about-line"></div>
+        <p>
+          Welcome to our astrology platform, where we bridge the wisdom of the stars with modern insights.
+          Our expert astrologer, with years of experience, is dedicated to guiding you on your life’s journey,
+          helping you unlock your true potential.
+        </p>
+        <p>
+          We specialize in personal consultations, zodiac compatibility, career guidance, and much more.
+          Trust the stars and let us help you find clarity and direction in your life.
+        </p>
+        <a href="about.html" class="know-more-btn">Know More</a>
+      </div>
+    </div>
+  </section>
+  
+
+
+<!--blogs section-->
+<section class="popular-blogs" id="blogs">
+  <div class="section-header">
+    <h2>Popular Blogs</h2>
+    <div class="blogs-line"></div>
+    <p>Discover insightful articles and updates about astrology, zodiac signs, and more!</p>
+  </div>
+  <div class="blog-container">
+    <!-- Blog Card 1 -->
+    <div class="blog-card">
+      <img src="1.jpg" alt="Blog 1">
+      <div class="blog-content">
+        <h3>Understanding Zodiac Signs</h3>
+        <p>Unveil the mystery behind the 12 zodiac signs and how they influence your life.</p>
+        <a href="blog1.html" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Blog Card 2 -->
+    <div class="blog-card">
+      <img src="2.jpg" alt="Blog 2">
+      <div class="blog-content">
+        <h3>Astrology and Career Choices</h3>
+        <p>Find out how astrology can guide your career path and decision-making process.</p>
+        <a href="blog2.html" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Blog Card 3 -->
+    <div class="blog-card">
+      <img src="3.jpg" alt="Blog 3">
+      <div class="blog-content">
+        <h3>Love Compatibility</h3>
+        <p>Explore how your zodiac sign aligns with your partner's for a harmonious relationship.</p>
+        <a href="blog3.html" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Blog Card 4 -->
+    <div class="blog-card">
+      <img src="4.jpg" alt="Blog 4">
+      <div class="blog-content">
+        <h3>Health and Astrology</h3>
+        <p>Discover how astrology can provide insights into health and well-being.</p>
+        <a href="blog4.html" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Blog Card 5 -->
+    <div class="blog-card">
+      <img src="1.jpg" alt="Blog 5">
+      <div class="blog-content">
+        <h3>Astrological Predictions 2025</h3>
+        <p>Get a glimpse into the future with predictions for the year 2025.</p>
+        <a href="blog5.html" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Blog Card 6 -->
+    <div class="blog-card">
+      <img src="3.jpg" alt="Blog 6">
+      <div class="blog-content">
+        <h3>Astrology for Beginners</h3>
+        <p>Start your journey into astrology with these easy-to-understand tips.</p>
+        <a href="blog6.html" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<!--suscribe-->
+<section class="subscribe-newsletter" id="newsletter">
+  <div class="newsletter-card">
+    <h2>Subscribe to Our Newsletter</h2>
+    <div class="newsletter-line"></div>
+    <p>Stay updated with the latest astrology insights and trends.</p>
+    <form class="newsletter-form" onsubmit="handleSubscription(event)">
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+      <button type="submit" class="subscribe-btn">Subscribe Now</button>
+    </form>
+  </div>
+</section>
+
+<!--footer section-->
+<footer class="footer">
+  <div class="footer-content">
+      <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="about.html" class="footer-link">About Us</a>
+          <a href="book.html" class="footer-link">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://facebook.com" class="social-icon" id="facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com" class="social-icon" id="instagram" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://twitter.com" class="social-icon" id="twitter" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://youtube.com" class="social-icon" id="youtube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="footer-copy">
+          <p>&copy; 2025 SuperAstroVastu. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
