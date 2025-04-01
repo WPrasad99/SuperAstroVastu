@@ -485,3 +485,66 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// Add this to your existing script.js file
+
+// Mobile dropdown toggle
+document.addEventListener("DOMContentLoaded", () => {
+  // Handle mobile dropdown toggles
+  const dropdowns = document.querySelectorAll(".nav-menu .dropdown")
+
+  if (window.innerWidth <= 768) {
+    dropdowns.forEach((dropdown) => {
+      const dropdownLink = dropdown.querySelector("a")
+
+      dropdownLink.addEventListener("click", (e) => {
+        // Only prevent default if it's a mobile view
+        if (window.innerWidth <= 768) {
+          e.preventDefault()
+
+          // Toggle active class for this dropdown
+          dropdown.classList.toggle("active")
+
+          // Close other dropdowns
+          dropdowns.forEach((otherDropdown) => {
+            if (otherDropdown !== dropdown) {
+              otherDropdown.classList.remove("active")
+            }
+          })
+        }
+      })
+    })
+  }
+
+  // Close dropdowns when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".dropdown")) {
+      dropdowns.forEach((dropdown) => {
+        dropdown.classList.remove("active")
+      })
+    }
+  })
+
+  // Update dropdown behavior on window resize
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      dropdowns.forEach((dropdown) => {
+        dropdown.classList.remove("active")
+      })
+    }
+  })
+})
+
+// Add hover effect for dropdown items
+const dropdownItems = document.querySelectorAll(".dropdown-item")
+dropdownItems.forEach((item) => {
+  item.addEventListener("mouseenter", function () {
+    const icon = this.querySelector("i")
+    if (icon) {
+      icon.classList.add("fa-bounce")
+      setTimeout(() => {
+        icon.classList.remove("fa-bounce")
+      }, 1000)
+    }
+  })
+})
