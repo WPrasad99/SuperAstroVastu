@@ -33,7 +33,7 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   background-color: #0c0020;
-  background-image: url("cosmic-background.png");
+  background-image: url("35576345_8306168.jpg");
   background-attachment: fixed;
   background-size: cover;
   overflow-x: hidden;
@@ -296,7 +296,7 @@ img {
   background-color: rgba(12, 0, 32, 0.95) !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   transition: var(--transition);
- 
+ background: transparent !important;
 }
 
 .navbar .container {
@@ -751,6 +751,7 @@ img {
   position: relative;
   z-index: 1;
   margin-top: -50px;
+  background: transparent !important;
 }
 
 .about-content {
@@ -895,6 +896,7 @@ img {
   background-color: rgba(12, 0, 32, 0.7);
   position: relative;
   z-index: 1;
+  background: transparent !important;
 }
 
 .services-grid {
@@ -1007,6 +1009,7 @@ img {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  background: transparent !important;
 }
 
 .videos::before {
@@ -1064,6 +1067,7 @@ img {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.8s ease-out forwards;
+ 
 }
 
 .video-card:nth-child(1) {
@@ -1188,6 +1192,7 @@ img {
   background-color: rgba(12, 0, 32, 0.7);
   position: relative;
   z-index: 1;
+  background: transparent !important;
 }
 
 .testimonial-slider {
@@ -1208,7 +1213,7 @@ img {
 }
 
 .testimonial-content {
-  background: rgba(30, 0, 60, 0.5);
+  background: rgba(16, 0, 32, 0.5);
   border-radius: var(--border-radius);
   padding: 30px;
   box-shadow: var(--box-shadow);
@@ -1228,10 +1233,18 @@ img {
   margin-bottom: 15px;
 }
 
+.section-header h2 {
+  color: white;
+}
+
+.section-header p {
+  color: white;
+}
+
 .testimonial-content p {
   font-style: italic;
   margin-bottom: 15px;
-  color: white;
+  color: white ;
 }
 
 .rating {
@@ -1322,6 +1335,7 @@ img {
   background-color: rgba(12, 0, 32, 0.7);
   position: relative;
   z-index: 1;
+  background: transparent !important;
 }
 
 .contact-content {
@@ -1388,7 +1402,7 @@ img {
 }
 
 .contact-card h3 {
-  color: var(--secondary-color);
+  color:white;
   margin-bottom: 10px;
 }
 
@@ -1398,7 +1412,7 @@ img {
 }
 
 .contact-form-container {
-  background: rgba(30, 0, 60, 0.5);
+  background: rgba(14, 0, 27, 0.5);
   border-radius: var(--border-radius);
   padding: 30px;
   box-shadow: var(--box-shadow);
