@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperAstroVastu - Expert Astrological Guidance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="logo.jpg" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="logo.jpg/favicon.svg" />
+    <link rel="shortcut icon" href="logo.jpg/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="logo.jpg/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="SuperAstroVastu" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+</head>
+
+<body>
+    <!-- Floating stars animation -->
+    <div class="floating-stars"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-img">
+                    <a href="index.html" target="_blank"><img src="logo.jpg" alt="Divine Astrology Logo"></a>
+                </div>
+                <a href="index.html" target="_blank"><h1 style="color: white;">SuperAstroVastu</h1></a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="index.html " target="_blank" class="active">Home <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#about" class="dropdown-item"><i class="fas fa-info-circle"></i> About</a>
+                        <a href="#services" class="dropdown-item"><i class="fas fa-cogs"></i> Services</a>
+                        <a href="#videos" class="dropdown-item"><i class="fas fa-video"></i> Social Media</a>
+                        <a href="#testimonials" class="dropdown-item"><i class="fas fa-star"></i> Reviews</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="services.html" target="_blank">Astrology <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="services.html"  target="_blank" class=" dropdown-item"><i class="fas fa-briefcase"></i> Career</a>
+                        <a href="services.html"  target="_blank" class=" dropdown-item"><i class="fas fa-rupee-sign"></i> Finance</a>
+                        <a href="services.html"  target="_blank" class=" dropdown-item"><i class="fas fa-heart"></i> Matchmaking</a>
+                        <a href="services.html"  target="_blank" class=" dropdown-item"><i class="fas fa-baby"></i> Childbirth</a>
+                        <a href="services.html"  target="_blank" class=" dropdown-item"><i class="fas fa-file-contract"></i> Foreign Settlement</a>
+                        <a href="services.html"  target="_blank" class="dropdown-item"><i class="fas fa-heartbeat"></i> Health</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="numerology.html" target="_blank">Numerology <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="numerology.html"  target="_blank" class="dropdown-item"><i class="fas fa-dice"></i> Lucky Number</a>
+                        <a href="numerology.html" target="_blank" class="dropdown-item"><i class="fas fa-signature"></i> Name Change</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="vastu.html" target="_blank">Vastu <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="services.html" target="_blank" class="dropdown-item"><i class="fas fa-home"></i> Vastu Analysis</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#yearly-readings">Yearly Readings <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item yearly-prediction" data-year="2021"><i class="fas fa-calendar-alt"></i> 2021</a>
+                        <a href="#" class="dropdown-item yearly-prediction" data-year="2022"><i class="fas fa-calendar-alt"></i> 2022</a>
+                        <a href="#readings-2023" class="dropdown-item"><i class="fas fa-calendar-alt"></i> 2023</a>
+                        <a href="#readings-2024" class="dropdown-item"><i class="fas fa-calendar-alt"></i> 2024</a>
+                    </div>
+                </li>
+                <li><a href="#contact" class="nav-btn">Book Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="stars"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Your Destiny</h1>
+                <p>Welcome to the world of astrology, where the stars reveal the mysteries of life. Connect with expert astrologers and explore personalized guidance for your life's journey.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn primary-btn">Explore Services</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Now</a>
+                </div>
+            </div>
+            <div class="astrologer-card-wrapper">
+                <div class="astrologer-card">
+                    <div class="astrologer-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-01-20%20at%2013.03.11_365867c2.jpg-6yg1pVNZgsjkMIr54vgAsuAWsNi4I6.jpeg" alt="Expert Astrologer">
+                    </div>
+                    <div class="astrologer-info">
+                        <h3>Pandit Suparna Naik</h3>
+                        <p>Award-Winning Vedic Astrologer</p>
+                        <div class="astrologer-credentials">
+                            <span><i class="fas fa-award"></i> 15+ Years Experience</span>
+                            <span><i class="fas fa-certificate"></i> Excellence Award 2022</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Our Astrologer</h2>
+                <div class="divider">
+                    <span><i class="fas fa-star"></i></span>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-01-20%20at%2013.03.11_365867c2.jpg-6yg1pVNZgsjkMIr54vgAsuAWsNi4I6.jpeg" alt="Expert Astrologer">
+                    <div class="experience-badge">
+                        <span>15+</span>
+                        <span>Years</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Pandit Suparna Naik</h3>
+                    <p class="subtitle">Vedic Astrology Expert & Spiritual Guide</p>
+                    <p>Pandit Suparna Naik has been practicing the brilliant art of astrology for more than a decade and she has collected a great amount of experience in this field. She converses in three languages such as Marathi , Hindi and English.She has developed an incredible command of the subfields of astrology , Numerology and Vastu Shastra . Pandit Suparna Naik has a highly intuitive and wise personality and she provides excellent and brilliant consultation.</p>  
+                    <p>A well-known vedic astrologer. She is from an engineering background, and pursued her career as a educationalist as well. She holds academic degree of masters in Information Technology.</p>
+                   
+                    <ul class="specialties">
+                        <li><i class="fas fa-check-circle"></i> Astrology</li>
+                        <li><i class="fas fa-check-circle"></i> Numerology</li>
+                        <li><i class="fas fa-check-circle"></i> Vastu Analysis</li>
+                    </ul>
+                    <a href="#contact" class="btn primary-btn">Book a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Astrological Services</h2>
+                <div class="divider">
+                    <span><i class="fas fa-star"></i></span>
+                </div>
+                <p style="color: white;">Discover how the cosmic energies can guide your life journey</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Astrology</h3>
+                    <p>Comprehensive analysis of your birth chart revealing your personality traits, strengths, and challenges.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Numerology</h3>
+                    <p>Detailed analysis of relationship dynamics and compatibility between partners or potential matches.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Vastu Analysis</h3>
+                    <p>Astrological insights into your professional path, suitable career options, and timing for changes.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Watch Our Astrologer</h2>
+                <div class="divider">
+                    <span><i class="fas fa-video"></i></span>
+                </div>
+                <p style="color: whitesmoke;">Gain wisdom and insights from our expert astrologer's video sessions</p>
+            </div>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/zsZhLrlJ9PU" title="Astrology Session" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Spiritual Guidance Session</h3>
+                        <p>Learn about the cosmic influences on your spiritual journey and how to align with your true purpose.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Published: Jan 15, 2025</span>
+                            <span><i class="fas fa-clock"></i> Duration: 15:42</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/0oV4J1NKlt0" title="Astrology Insights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Planetary Transitions & Their Effects</h3>
+                        <p>Discover how planetary movements affect different aspects of your life and how to navigate these transitions.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Published: Feb 28, 2025</span>
+                            <span><i class="fas fa-clock"></i> Duration: 18:23</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ft8AL2-plsE" title="Astrology Predictions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Annual Astrological Predictions</h3>
+                        <p>Get insights into what the stars have in store for you this year and how to make the most of cosmic opportunities.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Published: Mar 10, 2025</span>
+                            <span><i class="fas fa-clock"></i> Duration: 22:15</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/f7r2jECWvZU" title="Astrology Remedies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Powerful Astrological Remedies</h3>
+                        <p>Learn effective remedies to balance planetary influences and enhance positive energies in your life.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Published: Apr 5, 2025</span>
+                            <span><i class="fas fa-clock"></i> Duration: 19:48</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="videos-cta">
+                <a href="https://www.youtube.com/" target="_blank" class="btn primary-btn">
+                    <i class="fab fa-youtube"></i> Subscribe to Our Channel
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <div class="divider">
+                    <span><i class="fas fa-star"></i></span>
+                </div>
+                <p>Hear from those whose lives have been transformed through our astrological guidance</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>The birth chart reading was incredibly accurate. Smt. Deepa provided insights that helped me make important life decisions with confidence.</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Priya Sharma">
+                            </div>
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <p>Delhi, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>The career guidance I received was life-changing. The remedies suggested helped me overcome obstacles and find success in my professional life.</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul Verma">
+                            </div>
+                            <div class="author-info">
+                                <h4>Rahul Verma</h4>
+                                <p>Mumbai, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>The compatibility analysis for my marriage was spot on. It helped us understand each other better and build a stronger relationship.</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Anita Patel">
+                            </div>
+                            <div class="author-info">
+                                <h4>Anita Patel</h4>
+                                <p>Bangalore, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book Your Consultation</h2>
+                <div class="divider">
+                    <span><i class="fas fa-star"></i></span>
+                </div>
+                <p style="color: whitesmoke;">Take the first step towards cosmic clarity and spiritual guidance</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+91 9922420981</p>
+                        <p>Mon-Sat: 9:00 AM - 7:00 PM</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>superastrovastuu90@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Bharati Vidyapeeth's Jawaharlal Nehru Institute Of Technology</p>
+                        <p>Pune, India - 411043</p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="consultation-form" class="contact-form" action="https://formspree.io/f/xkgjdlwq" method="POST">
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time of Birth (if known)</label>
+                            <input type="time" id="time" name="time">
+                        </div>
+                        <div class="form-group">
+                            <label for="place">Place of Birth</label>
+                            <input type="text" id="place" name="place">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Required</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="personal-horoscope">Astrology</option>
+                                <option value="relationship-compatibility">Numerology</option>
+                                <option value="career-guidance">Vastu Analysis</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Your Questions or Concerns</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn full-width">Book Consultation</button>
+                        <button type="button" id="whatsapp-submit" class="btn primary-btn full-width">Send Message Via Whatsapp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>SuperAstroVastu</h2>
+                    <p>Guiding your cosmic journey with ancient wisdom</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">Astrology</a></li>
+                        <li><a href="#services">Numerology</a></li>
+                        <li><a href="#services">Vastu Analysis</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive monthly horoscopes and astrological insights</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SuperAstroVastu. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> and cosmic energy</p>
+            </div>
+        </div>
+    </footer> 
+    <script src="script.js"></script>
+    <script src="yearly-predictions.js"></script>
+
+    <!-- Custom Alert -->
+    <div class="custom-alert" id="custom-alert">
+        <div class="alert-content">
+            <div class="alert-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="alert-message">
+                <h3>Thank You!</h3>
+                <p>We will reach out to you shortly at <span id="alert-email"></span></p>
+            </div>
+            <button class="alert-close"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Script to create floating stars -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const starsContainer = document.querySelector('.floating-stars');
+            const starCount = 50;
+            
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.animationDelay = `${Math.random() * 5}s`;
+                starsContainer.appendChild(star);
+            }
+            
+            // Add shooting stars
+            for (let i = 0; i < 5; i++) {
+                const shootingStar = document.createElement('div');
+                shootingStar.classList.add('shooting-star');
+                shootingStar.style.left = `${Math.random() * 100}%`;
+                shootingStar.style.top = `${Math.random() * 100}%`;
+                shootingStar.style.animationDelay = `${Math.random() * 15}s`;
+                starsContainer.appendChild(shootingStar);
+            }
+            
+            // Create constellation effect
+            const constellationCount = 3;
+            for (let c = 0; c < constellationCount; c++) {
+                const constellation = document.createElement('div');
+                constellation.classList.add('constellation');
+                constellation.style.left = `${Math.random() * 80}%`;
+                constellation.style.top = `${Math.random() * 80}%`;
+                
+                // Create dots and lines for constellation
+                const dotCount = 5 + Math.floor(Math.random() * 5);
+                const dots = [];
+                
+                for (let d = 0; d < dotCount; d++) {
+                    const dot = document.createElement('div');
+                    dot.classList.add('constellation-dot');
+                    const x = Math.random() * 300;
+                    const y = Math.random() * 300;
+                    dot.style.left = `${x}px`;
+                    dot.style.top = `${y}px`;
+                    constellation.appendChild(dot);
+                    dots.push({x, y});
+                }
+                
+                // Connect dots with lines
+                for (let i = 0; i < dots.length - 1; i++) {
+                    const line = document.createElement('div');
+                    line.classList.add('constellation-line');
+                    
+                    const dx = dots[i+1].x - dots[i].x;
+                    const dy = dots[i+1].y - dots[i].y;
+                    const length = Math.sqrt(dx * dx + dy * dy);
+                    const angle = Math.atan2(dy, dx) * 180 / Math.PI;
+                    
+                    line.style.width = `${length}px`;
+                    line.style.left = `${dots[i].x}px`;
+                    line.style.top = `${dots[i].y}px`;
+                    line.style.transform = `rotate(${angle}deg)`;
+                    
+                    constellation.appendChild(line);
+                }
+                
+                starsContainer.appendChild(constellation);
+            }
+        });
+        
+    </script>
+</body>
+</html>
+
